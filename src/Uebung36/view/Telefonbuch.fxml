@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="269.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Uebung36.view.TelefonbuchController">
+    <children>
+        <TextField fx:id="tfVorname" layoutX="100.0" layoutY="66.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="tfNachname" layoutX="100.0" layoutY="107.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0" />
+        <TextField fx:id="tfStrasse" layoutX="100.0" layoutY="149.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
+        <TextField fx:id="tfHausNr" layoutX="100.0" layoutY="188.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="180.0" />
+        <TextField fx:id="tfPlz" layoutX="100.0" layoutY="235.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="220.0" />
+        <TextField fx:id="tfOrt" layoutX="100.0" layoutY="278.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="260.0" />
+        <TextField fx:id="tfTelefon" layoutX="100.0" layoutY="316.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="300.0" />
+        <Label layoutX="21.0" layoutY="64.0" text="Vorname:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="64.0" />
+        <Label layoutX="21.0" layoutY="104.0" text="Nachname:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="104.0" />
+        <Label layoutX="21.0" layoutY="144.0" text="Strasse:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="144.0" />
+        <Label layoutX="23.0" layoutY="226.0" text="Postleitzahl:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="224.0" />
+        <Label layoutX="21.0" layoutY="264.0" text="Ort:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="264.0" />
+        <Label layoutX="21.0" layoutY="184.0" text="HausNr:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="184.0" />
+        <Label layoutX="21.0" layoutY="304.0" text="TelefonNr:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="304.0" />
+        <Label alignment="CENTER" layoutX="107.0" layoutY="22.0" text="Telefonbuch" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnVorherigerEintrag" layoutX="18.0" layoutY="348.0" mnemonicParsing="false" onAction="#vorherigerEintrag" text="&lt;" AnchorPane.bottomAnchor="65.0" />
+        <Button fx:id="btnNaechsterEintrag" layoutX="54.0" layoutY="348.0" mnemonicParsing="false" onAction="#naechsterEintrag" text="&gt;" AnchorPane.bottomAnchor="65.0" />
+        <Button layoutX="90.0" layoutY="348.0" mnemonicParsing="false" onAction="#neuerEintrag" text="NeuerEintrag" AnchorPane.bottomAnchor="65.0" />
+        <Button layoutX="189.0" layoutY="348.0" mnemonicParsing="false" onAction="#loeschenEintrag" text="Löschen" AnchorPane.bottomAnchor="65.0" />
+        <Button layoutX="13.0" layoutY="384.0" mnemonicParsing="false" onAction="#druckeEintrag" text="Eintrag drucken" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" />
+        <Button layoutX="125.0" layoutY="384.0" mnemonicParsing="false" onAction="#druckeTelefonbuch" text="Telefonbuch drucken" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="14.0" />
+    </children>
+</AnchorPane>
